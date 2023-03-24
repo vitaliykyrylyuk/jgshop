@@ -5,9 +5,39 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "lintfix": "yarn lint:js --fix"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1"
+    "@nuxt/image-edge": "^1.0.0-27991759.1a5eea1",
+    "@nuxtjs/device": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.0.2",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.10",
+    "@nuxtjs/stylelint-module": "^5.0.1",
+    "@nuxtjs/tailwindcss": "^6.6.4",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "nuxt": "^3.3.1",
+    "nuxt-icon": "^0.3.3",
+    "postcss": "8.3.11",
+    "postcss-custom-properties": "^13.1.4",
+    "postcss-html": "^1.5.0",
+    "sass": "^1.59.3",
+    "stylelint": "^15.3.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^4.5.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.33"
   }
 }

@@ -15,3 +15,6 @@ dist
 
 # IDE / Editor
 .idea
+
+# Stylelint
+.stylelintcache
