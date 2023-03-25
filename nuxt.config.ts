@@ -7,10 +7,15 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/device',
     '@nuxt/image-edge',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxtjs/google-fonts'
   ],
 
-  buildModules: [
-    '@nuxtjs/google-fonts'
-  ]
+  pinia: {
+    autoImports: [
+      'defineStore',
+      'definePiniaStore',
+      'acceptHMRUpdate'
+    ]
+  }
 })
