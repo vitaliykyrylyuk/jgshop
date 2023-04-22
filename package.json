@@ -35,6 +35,7 @@
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^4.5.0",
+    "tw-elements": "^1.0.0-beta1",
     "typescript": "^5.0.2"
   },
   "dependencies": {

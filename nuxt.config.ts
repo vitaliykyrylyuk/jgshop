@@ -17,5 +17,24 @@ export default defineNuxtConfig({
       'definePiniaStore',
       'acceptHMRUpdate'
     ]
-  }
+  },
+
+  googleFonts: {
+    families: {
+      Lato: [400, 600, 700]
+    },
+    prefetch: true,
+    preconnect: true,
+    preload: true
+  },
+
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tw.config',
+    viewer: true
+  },
+
+  plugins: [
+    { src: '~/plugins/tailwind-elements.js', mode: 'client' }
+  ]
 })
