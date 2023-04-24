@@ -13,5 +13,6 @@ productStore.fill()
 // }
 </script>
 <template>
+  <HomepageMainSlider />
   <ProductList :products="productStore.products" />
 </template>

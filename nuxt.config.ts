@@ -11,6 +11,13 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
 
+  runtimeConfig: {
+    secretKey: process.env.SECRET_KEY,
+    public: {
+      availableLocales: process.env.AVAILABLE_LOCALES
+    }
+  },
+
   pinia: {
     autoImports: [
       'defineStore',
@@ -32,6 +39,26 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tw.config',
     viewer: true
+  },
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.js'
+      },
+      {
+        code: 'pl',
+        file: 'pl-PL.js'
+      }
+    ],
+    lazy: true,
+    defaultLocale: 'en',
+    detectBrowserLanguage: false,
+    langDir: 'locales',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
   },
 
   plugins: [

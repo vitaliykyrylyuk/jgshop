@@ -1,9 +1,10 @@
 <script setup></script>
 
 <template>
-  <MainHeader />
+  <HeaderSuper />
+  <HeaderMain />
   <div>
     <slot />
   </div>
-  <MainFooter />
+  <Footer />
 </template>
