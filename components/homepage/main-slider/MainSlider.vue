@@ -1,6 +1,4 @@
-<script setup>
-const { t } = useI18n()
-</script>
+<script setup></script>
 
 <template>
   <div class="homepage-slogan relative overflow-hidden bg-cover bg-no-repeat">
@@ -10,7 +8,7 @@ const { t } = useI18n()
       <div class="flex h-full items-center justify-center">
         <div class="px-6 text-center text-white md:px-12">
           <h1 class="mb-6 text-5xl font-bold uppercase">
-            {{ t('homepage.slogan') }}
+            {{ $t('homepage.slogan') }}
           </h1>
           <button
             type="button"

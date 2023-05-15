@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <HeaderSuper />
-  <HeaderMain />
-  <div>
+  <SuperHeader class="hidden sm:block" />
+  <Header />
+  <div class="min-h-[50vh]">
     <slot />
   </div>
   <Footer />

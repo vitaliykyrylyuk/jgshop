@@ -1,5 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
-
+import plugin from 'tailwindcss/plugin'
 module.exports = {
   theme: {
     extend: {
@@ -7,12 +7,16 @@ module.exports = {
         sans: ['Lato', ...defaultTheme.fontFamily.sans]
       },
       colors: {
+        yellow: {
+          300: '#dcc364',
+          400: '#e0b11a'
+        },
         rose: {
           400: '#f65261'
         },
         gray: {
           600: '#424242',
-          900: '#232323'
+          900: '#111111'
         }
       },
       screens: {
@@ -30,5 +34,12 @@ module.exports = {
   content: [
     './node_modules/tw-elements/dist/js/**/*.js'
   ],
-  plugins: [require('tw-elements/dist/plugin')]
+  plugins: [
+    require('tw-elements/dist/plugin'),
+    plugin(({ addBase, theme }) => {
+      addBase({
+        html: { color: theme('colors.gray.900') }
+      })
+    })
+  ]
 }

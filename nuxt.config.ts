@@ -61,6 +61,10 @@ export default defineNuxtConfig({
     }
   },
 
+  device: {
+    refreshOnResize: true
+  },
+
   plugins: [
     { src: '~/plugins/tailwind-elements.js', mode: 'client' }
   ]

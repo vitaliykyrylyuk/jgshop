@@ -1,11 +1,9 @@
-<script setup>
-defineProps({
-  product: {
-    type: Object,
-    required: true,
-    default: null
-  }
-})
+<script setup lang='ts'>
+import Product from '~/types/product'
+
+const props = defineProps<{
+  product: Product
+}>()
 
 </script>
 <template>
@@ -27,13 +25,13 @@ defineProps({
         <h5
           class="mb-2 text-xl font-medium leading-tight text-neutral-800"
         >
-          {{ product.name }}
+          {{ props.product.name }}
         </h5>
         <p class="mb-4 text-base text-neutral-600">
-          {{ product.description }}
+          {{ props.product.description }}
         </p>
         <p class="mb-4 text-base text-neutral-600">
-          {{ product.price }}
+          {{ props.product.price }}
         </p>
         <button
           type="button"

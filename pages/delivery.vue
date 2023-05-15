@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    {{ $t('welcome') }}
+    Page: foo
   </div>
 </template>
