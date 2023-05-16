@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
-  // app: {
-  //   baseURL: '/jgshop/'
-  // },
+  app: {
+    baseURL: '/jgshop/'
+  },
 
   modules: [
     '@nuxtjs/eslint-module',
