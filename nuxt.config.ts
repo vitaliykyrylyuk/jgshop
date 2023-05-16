@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/jgshop/'
+  },
+
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
