@@ -30,9 +30,13 @@ export default defineNuxtConfig({
     families: {
       Lato: [400, 600, 700]
     },
-    prefetch: true,
-    preconnect: true,
-    preload: true
+    subsets: ['latin'],
+    display: 'swap',
+    prefetch: false,
+    preconnect: false,
+    preload: false,
+    download: true,
+    base64: false
   },
 
   tailwindcss: {

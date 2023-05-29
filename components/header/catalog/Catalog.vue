@@ -15,7 +15,7 @@ const categories = [
 <template>
   <Popover v-slot="{ open }">
     <PopoverButton class="relative inline-flex leading-6 text-white items-center w-[190px] h-9 text-xs font-semibold uppercase transition duration-150 ease-in-out bg-yellow-400 hover:bg-yellow-300 focus:outline-none pl-8">
-      <UiMenuToggle :is-menu-open="open" class="absolute scale-75 left-2" />
+      <UiMenuToggle :is-menu-open="open" class="absolute scale-75 left-2 text-white" />
       {{ $t('header.catalog') }}
       <Icon name="CaretIcon" size="12" class="ml-2 rotate-90" />
       <UiRipple />
