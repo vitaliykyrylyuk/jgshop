@@ -27,6 +27,7 @@ jobs:
           yarn generate
         env:
           NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
+          AVAILABLE_LOCALES: ${{ vars.AVAILABLE_LOCALES  }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
