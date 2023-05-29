@@ -3,13 +3,13 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate && copy .nojekyll .output\\public\\.nojekyll",
+    "generate": "nuxt generate && copy .nojekyll .output\\public",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "lintfix": "yarn lint:js --fix",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -t"
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27991759.1a5eea1",
