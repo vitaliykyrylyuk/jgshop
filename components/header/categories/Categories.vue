@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const categories = ref([
-  'new',
+  'news',
   'top',
   'sale'
 ])
