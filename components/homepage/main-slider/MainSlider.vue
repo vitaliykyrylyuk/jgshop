@@ -4,7 +4,7 @@
   <div class="relative">
     <NuxtImg
       src="backgrounds/dusty-black.jpg"
-      class="absolute"
+      class="absolute 1"
     />
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"
