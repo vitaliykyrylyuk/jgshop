@@ -69,6 +69,31 @@ export default defineNuxtConfig({
     refreshOnResize: true
   },
 
+  image: {
+    dir: 'public',
+    domains: ['https://picsum.photos'],
+    screens: {
+      sm: 500,
+      md: 875,
+      lg: 1200,
+      xl: 1920
+    },
+    provider: 'ipx',
+    ipx: {
+      modifiers: {
+        format: 'webp, svg, gif'
+      }
+    },
+    presets: {
+      card: {
+        modifiers: {
+          width: 200,
+          height: 300
+        }
+      }
+    }
+  },
+
   plugins: [
     { src: '~/plugins/tailwind-elements.js', mode: 'client' }
   ]

@@ -1,7 +1,11 @@
 <script setup></script>
 
 <template>
-  <div class="homepage-slogan relative overflow-hidden bg-cover bg-no-repeat">
+  <div class="relative">
+    <NuxtImg
+      src="backgrounds/dusty-black.jpg"
+      class="absolute"
+    />
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"
     >
