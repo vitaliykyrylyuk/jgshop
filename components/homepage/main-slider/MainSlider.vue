@@ -6,6 +6,7 @@
       src="backgrounds/dusty-black.jpg"
       class="absolute 1"
     />
+    <!--    <img src="images/backgrounds/dusty-black.jpg" alt="sadsad">-->
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"
     >

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     '@nuxtjs/device',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     'nuxt-icon',
     '@nuxtjs/google-fonts'
   ],
@@ -70,7 +70,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    dir: 'public',
+    dir: 'public/images',
     domains: ['https://picsum.photos'],
     screens: {
       sm: 500,
@@ -79,11 +79,6 @@ export default defineNuxtConfig({
       xl: 1920
     },
     provider: 'ipx',
-    ipx: {
-      modifiers: {
-        format: 'webp, svg, gif'
-      }
-    },
     presets: {
       card: {
         modifiers: {

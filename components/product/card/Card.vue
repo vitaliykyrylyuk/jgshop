@@ -18,6 +18,8 @@ const props = defineProps<{
         <NuxtImg
           :src="`https://picsum.photos/750/500?random=${Math.floor(Math.random() * 10)}`"
           :alt="product.name"
+          width="384"
+          height="256"
           loading="lazy"
         />
       </a>
